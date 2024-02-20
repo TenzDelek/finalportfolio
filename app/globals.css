@@ -6,3 +6,9 @@
   font-family: 'integralCF';
   src: url('../public/fonts/IntegralCF-Regular.otf');
 }
+.shadow-art {
+  box-shadow: 2px 1px 0px 0px rgba(0, 0, 0, 1); 
+}
+body{
+  background-color: #F9F1E4;
+}
