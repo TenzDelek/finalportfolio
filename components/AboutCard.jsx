@@ -17,7 +17,7 @@ import { Avatar } from "./Avatar";
 //       return(<Avatar ref={meshRef}  />)
 // }
 const AboutCard = () => {
-    const meshRef = useRef();
+    
   return (
     <div className=' rounded-lg border-2 border-black shadow-body1 hover:shadow-none transition '>
         <div className=' border-b-2 border-black flex justify-between items-center'>
@@ -34,16 +34,13 @@ const AboutCard = () => {
     <div className='flex-1   border-2 border-black h-72 w-56'>
         {/* iamge div */}
         <div className=' h-64 w-full'>
-        <Canvas shadows camera={{ position: [0, 0,8], fov: 30 }}>
-      <color attach="background" args={["#F9F1E4"]} />
-      <ambientLight intensity={2} />
-      <group scale={3} >
-      <Avatar ref={meshRef}  />
-      </group>
-      <directionalLight position={[2,1,1]}/>
-      <OrbitControls enableZoom={false}  />
-        
-    </Canvas>
+        <Canvas shadows camera={{ position: [0, 0, 8], fov: 30 }}>
+  <color attach="background" args={["#F9F1E4"]} />
+  <OrbitControls enableZoom={false} />
+  <ambientLight intensity={2} />
+  <Avatar  scale={3} position={[0, -1.5, 0]} />
+  <directionalLight position={[2, 1, 1]} />
+</Canvas>
         </div>
         <div className=' items-center pt-1 justify-between flex border-t-2 border-black'>
         <IoIosArrowBack/>

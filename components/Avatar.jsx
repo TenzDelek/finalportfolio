@@ -11,7 +11,7 @@ export function Avatar(props) {
   const groupRef = useRef();
   useFrame(() => {
     groupRef.current.rotation.y += 0.01;
-    camera.lookAt(groupRef.current.position);
+
   });
   const { nodes, materials } = useGLTF("models/finalman.glb");
   return (
