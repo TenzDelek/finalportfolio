@@ -31,4 +31,10 @@ and assign the groupref to the group in the avatar.jsx
 
   so now doneee.
 
+# nah it was not done haha, the rotation was still of, but there was a guy who really help me from the oliver discord server, that moment i got to understand the true power of global community
 
+now what i was doing wrong was there was no need for a group or any kind of a useframe, and the soln was basically my avatar was on origin point to feet which should have been on stomach so with the position we did the -1.5 to move it down. scale={3} position={[0, -1.5, 0]} then in my avatar dont know how i wrote lookat which was causeing that problem where my mesh was origin at foot. so i remove the lookat and booom 
+
+huge shoutout to that person who help me @Kagune 
+
+# SO BASICALLY THE WHOLE ISSUE WAS DUE TO THAT SIMPLE ORIGIN PROBLEM SO NEXT TIME DONT FORGET TO PUT THE CANVAS TO THE CENTER
