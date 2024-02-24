@@ -1,4 +1,5 @@
-import AboutCard from "@/components/AboutCard";
+import dynamic from "next/dynamic";
+const AboutCard=dynamic(()=>import( "@/components/AboutCard"),{ssr:false});
 import Top from "@/components/Top";
 
 export default function Home() {
