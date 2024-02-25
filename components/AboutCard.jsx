@@ -1,6 +1,6 @@
 "use client";
 
-import { Environment, OrbitControls } from "@react-three/drei";
+import { Environment, OrbitControls, Sky } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React from "react";
 import { IoIosArrowBack } from "react-icons/io";
@@ -27,9 +27,9 @@ const AboutCard = () => {
               <color attach="background" args={["#F9F1E4"]} />
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={2} />
-              <group>
+              <Sky />
               <Avatar scale={7} position={[0, -5, 0]} />
-              </group>
+              
               
               <Environment preset="sunset"/>
               {/* <directionalLight position={[2, 1, 1]} /> */}
