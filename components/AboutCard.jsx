@@ -26,7 +26,7 @@ const AboutCard = () => {
             <Canvas shadows camera={{ position: [0, 0, 8], fov: 30 }}>
               <color attach="background" args={["#F9F1E4"]} />
               <OrbitControls enableZoom={false} />
-              <ambientLight intensity={2} />
+              <ambientLight  />
               <Sky />
               <Avatar scale={7} position={[0, -5, 0]} />
               
